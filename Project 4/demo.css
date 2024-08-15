@@ -1,0 +1,11 @@
+body {
+    background-color: #00BBC9;
+}
+
+.btn-outline-dark{
+    border-color: white;
+}
+
+.btn-outline-dark :hover{
+    background-color: rgba(0, 0, 0, 0.125);
+}

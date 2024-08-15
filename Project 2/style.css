@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IS:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Zeyada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    /*background-image: linear-gradient(#603813, #b29f94);*/
+    background-image: url();
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.125rem;
+    background-image: linear-gradient(#94716B, #B79891);
+}
+
+.container {
+    width: 1200px;
+    min-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px;
+    /*Not Working*/
+    /*border-bottom in main OR <hr between header and main in index.html>*/
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.card1 {
+    background-image: url(Images/Image3.jpg);
+    background-size: cover;
+    /*background-position: bottom;*/
+    /*min-height: 300px;*/
+    width: 30%;
+    height: 280px;
+    width: 300px;
+    box-shadow: 8px 8px 10px #917570b0;
+}
+
+.card2 {
+    background-image: url(Images/Image2.jpg);
+    background-size: cover;
+    /*background-position: bottom;*/
+    /*min-height: 300px;*/
+    /*width: 30%; */
+    height: 280px;
+    width: 300px;
+    background-position: top;
+    box-shadow: 8px 8px 10px #917570b0;
+}
+
+.card3 {
+    background-image: url(Images/Image4.jpg);
+    background-size: cover;
+    /*background-position: bottom;*/
+    /*min-height: 300px;*/
+    /*width: 30%; */
+    height: 280px;
+    width: 300px;
+    background-position: top;
+    box-shadow: 8px 8px 10px #917570b0;
+}
+
+.card1,
+.card2,
+.card3 {
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+}
+
+.herobox1 {
+    flex: 2;
+    padding-right: 80px;
+}
+
+.herobox2 {
+    flex: 1;
+    /*padding-left: 20px;*/
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.574);
+    height: 250px;
+}
+
+h1 {
+    font-size: 40px;
+    /*3.25rem*/
+    margin-bottom: 1rem;
+    text-shadow: 5px 5px 5px #7f625d98;
+}
+
+p {
+    line-height: 1.5rem;
+    /*margin-bottom: 0.5rem;*/
+    text-shadow: 5px 5px 5px #7f625dc2;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 5px 5px 5px #7f625d98;
+
+}
+
+.cards p {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    /*line-height: 1.2rem;*/
+    /*margin: 10px 30px 20px 30px; Goes clockwise*/
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.cards i {
+    font-size: 50px;
+}
+
+.cards a {
+    color: white;
+    text-decoration: none;
+}
+
+.mybutton {
+    /*herobox1 button*/
+    background-color: white;
+    color: #94716B;
+    font-family: "Playfair Display", serif;
+    padding: 11px 25px;
+    /* if you write 2 then 1st is for top and bottm and 2nd is for right and left*/
+    border-radius: 20px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px #7f625d;
+}
+
+a.mybutton {
+    /*herobox1 button*/
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.navbutton {
+    /*header buttons (3)*/
+    border: 2px solid white;
+    padding: 12px 28px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-decoration: none;
+    border-style:dotted;
+    margin: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 50px 100px;
+}
+
+
+.tbox :last-child {
+    /*.tbox:last-child = Will consider the last whole box*/
+    /*.tbox :last-child = Will consider the last item of all the boxes*/
+    font-size: 17px;
+    padding-left: 60%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1; /*Is not making any difference*/
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navbutton:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbutton{
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.81);
+    border-radius: 10px;
+    font-weight: 400;
+    border: none;
+}
+
+.dropdown .navbutton a{
+    color: #7f625d;
+}
+
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.aboutus{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+.cv{
+    padding-top: 20px;
+}
+
+.team{
+    padding-top: 20px;
+}
+
+.ol{
+    text-shadow: 5px 5px 5px #7f625dc2;
+}
+
+.joinourteam{
+    padding: 20px;
+    border: 1px solid white;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.applybutton{
+    background-color: white;
+    color: #7f625d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 5px #7f625d;
+    margin-top: 100px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ul{
+    font-family: "Playfair Display", serif;
+    text-shadow: 5px 5px 5px #7f625dc2;
+}
+
+.inputwrapper{
+    margin-bottom: 20px;
+}
+
+.contactus{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.container2{
+    width: 1200px;
+    height: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+}
+
+input[type=text], input[type=email], textarea{
+    padding: 12px 20px;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submitbutton{
+    background-color: white;
+    color: #7f625d;
+    padding: 5px 100px;
+    border-color: white;
+    border-radius: 15px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600px;
+    font-size: 20px;
+    box-shadow: 5px 5px #94716b9e;
+}
+
+.submit2{
+    padding-right: 60%;
+    padding-left: 40%;
+}
+
+
+
+
+
+

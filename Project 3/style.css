@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+
+/*Global/Desktop view*/
+
+.header-container{
+    background-color: rgb(62, 62, 62);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;         /*0 for top, bottom auto for left and right*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.logo{
+    color: white;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: lightskyblue;
+}
+
+.hide-d {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+.col p {
+    color: white;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: 25px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.mob-wrapper{
+        display: none;
+}
+
+
+
+
+/*Tablet view*/
+@media(max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+
+    .hide-d {
+        display: block;
+    }
+
+     nav a{
+        display: block;
+     }
+
+     .logo{
+        padding: 40px 0;
+     }
+
+     .button{
+        margin-left: 0;
+     }
+
+     .header-container{
+        position: relative;
+        padding-left: 20px;
+     }
+
+     .container{
+        padding-top: 20px;
+     }   
+
+     nav{
+        display: none;
+     }
+
+     .mob-wrapper{
+         display: block;
+         padding-right: 30px;
+     }
+
+     .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+     }
+
+     .navbutton{
+        display: block;
+        background-color: rgba(62, 62, 62, 0.853);
+        padding: 15px 30px;
+        margin-left: -90px;
+        text-align: center;
+        margin-bottom: 10px;
+     }
+ 
+
+}
+
+
+
+/*Mobile View*/
+@media(max-width: 600px) {
+    .col {
+        width: 100%;
+    }
+
+    .hide-m {
+        display: none;
+    }
+
+}

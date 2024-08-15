@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+        content="Contact Details for The Wedding Closet - 43 XYZ Apartment, Shankar Nagar, Nagpur. Phone +91-8564XXXXXX">
+    <!--<link rel="icon" href="Images/Logo.png">LATER-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Logo.png">
+    <!--This is Eric Meyer CSS reset-->
+    <!--<link rel="stylesheet" href="css-reset.css">-->
+    <script src="https://kit.fontawesome.com/fc6758f350.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container2">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/Logo1.png" alt="" width="200px" height="120px">
+                </a>
+            </div>
+
+
+            <nav>
+
+                <div class="navbutton">
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="navbutton">
+                    <a href="#">Book Online</a>
+
+                    <div class="dropdown">
+                        <div class="navbutton"> <a href="#">Rent Attire</a> </div>
+                        <div class="navbutton"> <a href="#">Onsite Service</a> </div>
+                        <div class="navbutton"> <a href="#">Request a Call</a> </div>
+                    </div>
+                </div>
+
+                <div class="navbutton"> <a href="#">About</a>
+                    <div class="dropdown">
+                        <div class="navbutton"> <a href="aboutus.html">About us</a> </div>
+                        <div class="navbutton"> <a href="#">Work Culture</a> </div>
+                        <div class="navbutton"> <a href="joinourteam.html">Join our Team</a> </div>
+                    </div>
+                </div>
+
+                <div class="navbutton"> <a href="#">Contact</a> </div>
+
+            </nav>
+        </header>
+        <hr>
+
+        <div>
+            <h1 class="contactus">Contact Us</h1>
+
+            <p>Do you have any questions? Please do not hesitate to contact us directly. Out team will come back to you
+                within a matter of hours to help you.</p>
+
+            <form action="mail.php" method="post">
+
+                <div class="inputwrapper">
+                    <label for="name" class="newline">First Name</label>
+                    <input type="text" name="Name" id="name" placeholder="First Name">
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Email</label>
+                    <input type="email" name="Email" id="email" placeholder="xyz@gmail.com">
+                </div>
+
+                <div class="inputwrapper">
+                    <textarea name="Message" id="message" cols="110" rows="5"
+                        placeholder="Let us know what you think"></textarea>
+                </div>
+
+                <div class="inputwrapper">
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                    <label for="email-sub">Sign up for Email Newsletter</label>
+                </div>
+
+                <p>How would you like to be contacted?</p>
+
+                <div class="inputwrapper">
+                    <input type="radio" name="contact-pref" id="Phone"> <label for="Phone">Phone</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="contact-pref" id="Email"> <label for="Email">Email</label>
+                    <br><br>
+                    <div class="inputwrapper">
+                        <select name="country" id="country">
+                            <option value="Not Chosen">Choose Country</option>
+                            <option value="India" selected>India</option>
+                            <option value="England">England</option>
+                            <option value="Nepal">Nepal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="submit2">
+                    <input type="submit" value="Send" class="submitbutton">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

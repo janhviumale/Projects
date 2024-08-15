@@ -1,0 +1,20 @@
+.navbutton{
+    background-color: lightgreen;
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+
+/*This turns the drop down off when not used*/
+.dropdown-box{
+    display: none;
+    position: absolute;
+}
+
+/*This class turns the dropdown menu on during hover*/
+.navbutton:hover .dropdown-box{
+    display: block;
+}
